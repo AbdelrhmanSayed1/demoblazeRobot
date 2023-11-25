@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231125 23:25:03.171" rpa="false" schemaversion="4">
+<suite id="s1" name="FirtsTC" source="C:\development\Robot Scripts\first-project\tests\FirtsTC.robot">
+<test id="s1-t1" name="Valid Login" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231125 23:25:03.640" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/#'.</msg>
+<status status="PASS" starttime="20231125 23:25:03.639" endtime="20231125 23:25:08.386"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=login2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231125 23:25:08.400" level="INFO">Clicking element 'id=login2'.</msg>
+<status status="PASS" starttime="20231125 23:25:08.398" endtime="20231125 23:25:08.569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="logInModal"]/div/div/div[3]/button[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231125 23:25:08.570" endtime="20231125 23:25:08.873"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=loginusername</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231125 23:25:08.874" level="INFO">Typing text 'aaaaaaa' into text field 'id=loginusername'.</msg>
+<status status="PASS" starttime="20231125 23:25:08.873" endtime="20231125 23:25:09.145"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=loginpassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231125 23:25:09.149" level="INFO">Typing text 'aaaaaaa' into text field 'id=loginpassword'.</msg>
+<status status="PASS" starttime="20231125 23:25:09.147" endtime="20231125 23:25:09.390"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="logInModal"]/div/div/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231125 23:25:09.392" level="INFO">Clicking element 'xpath=//*[@id="logInModal"]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20231125 23:25:09.391" endtime="20231125 23:25:09.509"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231125 23:25:09.510" endtime="20231125 23:25:12.281"/>
+</kw>
+<status status="PASS" starttime="20231125 23:25:03.638" endtime="20231125 23:25:12.283"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" starttime="20231125 23:25:03.174" endtime="20231125 23:25:12.285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FirtsTC">FirtsTC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
